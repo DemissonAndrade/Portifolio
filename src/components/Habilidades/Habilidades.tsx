@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./Habilidades.css"; // Importe o CSS
+import "./habilidades.css"; // Importe o CSS
 
 const Habilidades = () => {
 

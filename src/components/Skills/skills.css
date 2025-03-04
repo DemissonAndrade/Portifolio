@@ -77,7 +77,7 @@
 
 /* Define a imagem de fundo dinamicamente */
 .skill-item[data-image]::before {
-  --skill-image: url(attr(data-image));
+  --skill-image: (attr(data-image));
 }
 
 .skill-tooltip {
