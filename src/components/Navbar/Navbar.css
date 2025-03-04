@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(250, 92, 1, 0.993);
+}
+
+/* Estilos globais */
+.navbar {
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 99%;
+    background: linear-gradient(135deg, rgba(4, 5, 7, 0.9) 0%, rgba(13, 47, 105, 0.9) 100%);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    justify-content: space-between;
+    transition: background 0.3s ease-in-out; /* Transição suave para o fundo */
+    z-index: 1000;
+}
+
+.navbar.transparent {
+    background: linear-gradient(135deg, rgba(4, 5, 7, 0.5) 0%, rgba(13, 47, 105, 0.5) 100%);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* Brand/Link */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #101d38;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #000000;
+}
+
+/* Hamburger Menu (Mobile) */
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #e7e3e3;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Links de Navegação */
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    color: #9da1da;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-link:hover {
+    color: #9da1da;
+}
+
+.navbar-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:#9da1da;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+/* Dropdown */
+.navbar-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1e3c72;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 15px;
+    color: #778bb1;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.dropdown-link:hover {
+    background: #1d3358;
+}
+
+/* Animação de fade-in para o dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-toggle-label {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(135deg, rgba(4, 5, 7, 0.9) 0%, rgba(13, 47, 105, 0.9) 100%);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius: 5px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-toggle:checked~.navbar-links {
+        display: flex;
+    }
+
+    .navbar-link {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .navbar-dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        background: linear-gradient(135deg, rgba(4, 5, 7, 0.9) 0%, rgba(13, 47, 105, 0.9) 100%);
+        box-shadow: none;
+    }
+
+    .dropdown-link {
+        padding: 10px;
+    }
+}

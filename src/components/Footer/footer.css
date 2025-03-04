@@ -1,0 +1,39 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .text-secondary {
+    color: #0d0b86;
+    margin: 10px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin: 20px 0;
+  }
+  
+  .icon {
+    color: white; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .icon:hover {
+    color: #0077b5; /* Cor ao passar o mouse (ex: azul do LinkedIn) */
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }

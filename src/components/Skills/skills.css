@@ -1,0 +1,97 @@
+/* Estilo do container de habilidades */
+.skills-container {
+ 
+  padding: 4rem;
+  text-align: center;
+  background-color: rgb(14, 13, 13);
+  color: rgba(250, 92, 1, 0.993);
+
+}
+
+/* Lista de habilidades */
+.skills-list {
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+ 
+}
+
+/* Item de habilidade */
+.skill-item {
+  position: relative;
+  /* Necessário para posicionar o balão */
+  padding: 1rem 2rem;
+  background-color: #3182ce;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #63b3ed;
+}
+
+/* Balão que aparece ao passar o mouse */
+.skill-item:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  /* Posiciona o balão acima do item */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  /* Espaço entre o item e o balão */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+  /* Triângulo do balão */
+}
+
+/* Container da imagem dentro do balão */
+.skill-item:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  /* Ajuste conforme necessário */
+  width: 150px;
+  /* Largura do balão */
+  height: 150px;
+  /* Altura do balão */
+  background-image: var(--skill-image);
+  /* Usa o atributo data-image */
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  
+}
+
+/* Define a imagem de fundo dinamicamente */
+.skill-item[data-image]::before {
+  --skill-image: url(attr(data-image));
+}
+
+.skill-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}

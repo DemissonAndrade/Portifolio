@@ -1,0 +1,120 @@
+/* Estilo da seção de projetos */
+.projects-section {
+    padding: 4rem 2rem;
+    background-color: #f9fafb; /* Fundo suave */
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2d3748; /* Cor escura para contraste */
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid de projetos */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 2rem; /* Espaçamento entre os cards */
+    padding: 0 2rem;
+  }
+  
+  /* Estilo do link do projeto */
+  .project-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto do elemento pai */
+    display: block; /* Faz o link ocupar todo o espaço do card */
+  }
+  
+  /* Estilo do card */
+  .project-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Estilo da imagem do card */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    
+  }
+  
+  /* Estilo do conteúdo do card */
+  .project-content {
+    padding: 1.5rem;
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    flex: 1; /* Faz a descrição ocupar o espaço restante */
+  }
+  
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-badge {
+    background-color: #ebf8ff;
+    color: #3182ce;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .project-link {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #63b3ed;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .projects-section {
+      padding: 2rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
+      padding: 0;
+    }
+  }

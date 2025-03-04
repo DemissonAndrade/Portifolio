@@ -1,0 +1,79 @@
+/* Estilos gerais do card */
+.project-card {
+    /* Estilos individuais dos cartões */
+
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.10s ease, box-shadow 0.5s ease;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos da imagem */
+.project-image {
+    width: 100%;
+    height: 200px;
+   
+}
+
+/* Estilos do conteúdo do card */
+.project-content {
+    padding: 16px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 12px;
+}
+
+/* Estilos da lista de tecnologias */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tech-badge {
+    background-color: #ebf8ff;
+    color: #3182ce;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 9999px;
+}
+
+/* Estilos dos links */
+.projects-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-grid a {
+    color: #3182ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.projects-grid a:hover {
+    color: #63b3ed;
+}
+
