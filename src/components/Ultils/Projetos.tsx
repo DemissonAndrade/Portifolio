@@ -20,7 +20,7 @@ const Projetos = () => {
       <h1 className="hr">Robot Aviator</h1>
 
      
-      <img className="img" src="./public/aviator.jpg" alt="Robô Aviator"/>
+      <img className="img" src="./public/img/aviator.jpg" alt="Robô Aviator"/>
 
        
         <h1 className="hr">Aqui estão alguns dos meus projetos incríveis!</h1>

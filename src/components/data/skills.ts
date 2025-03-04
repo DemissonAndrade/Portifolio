@@ -1,10 +1,10 @@
 
-import javaScript from "../assets/javaScript.jpg";
-import javaImage from "../assets/Java.jpg";
-import MySql from "../assets/MySql.jpg";
-import HtmleCss from "../assets/Html5eCss.jpg";
-import Dio from "../assets/Dio.jpg";
-import DevSup from "../assets/DevSup.png";
+import javaScript from "../assets/img_cert/javaScript.jpg";
+import javaImage from "../assets/img_cert/Java.jpg";
+import MySql from "../assets/img_cert/MySql.jpg";
+import HtmleCss from "../assets/img_cert/Html5eCss.jpg";
+import Dio from "../assets/img_cert/Dio.jpg";
+import DevSup from "../assets/img_cert/DevSup.png";
 
 export const skills = [
   { id: 1, name: "Dev", image: DevSup  },

@@ -21,7 +21,7 @@ const Cadastro = () => {
             <h1 className="hr">Cadastro e autenticação com token JWT (JSON Web Token)</h1>
 
 
-            <img className="img" src="./public/cadastro.jpg" alt="cadastro" />
+            <img className="img" src="./public/img/cadastro.jpg" alt="cadastro" />
 
 
             <h1 className="hr">Aqui estão alguns dos meus projetos incríveis!</h1>

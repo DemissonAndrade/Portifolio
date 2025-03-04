@@ -19,7 +19,7 @@ const DashBoard = () => {
       <h1 className="hr">Dashboard de Vendas</h1>
 
       {/* Imagem ilustrativa */}
-      <img className="img" src="./public/DsVendas.png" alt="Dashboard de Vendas" />
+      <img className="img" src="./public/img/DsVendas.png" alt="Dashboard de Vendas" />
 
       {/* Descrição do Dashboard */}
       <h1 className="hr">Aqui estão algumas das métricas incríveis do seu negócio!</h1>

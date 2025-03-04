@@ -17,7 +17,7 @@ const Cadastro = () => {
             </button>
 
             
-            <img className="img" src="./public/avatar.jpg" alt="cadastro" />
+            <img className="img" src="./public/img/avatar.jpg" alt="cadastro" />
 
 
             <h1 className="hr"> Demisson Andrade  </h1>

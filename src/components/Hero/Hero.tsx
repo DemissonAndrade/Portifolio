@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Conteúdo principal */}
       <div className="hero-content">
         <img
-          src="./public/avatar.jpg"
+          src="../img/avatar.jpg"
           alt="Demisson Andrade"
           className="avatar"
         />

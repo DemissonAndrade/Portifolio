@@ -1,33 +1,31 @@
-
-
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #0d0b86;
+  color: rgba(250, 92, 1, 0.993);;
 }
+
 .name {
   color: rgba(250, 92, 1, 0.993);
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 /* Estilos globais */
 body {
-  
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #030303 0%, #2a5298 100%);
+  background: linear-gradient(135deg, #c5d8b1 0%, #2a5298 100%);
   color: #fff;
   line-height: 1.6;
-  padding: 20px;
+  padding: 2vw;
 }
 
 /* Container principal */
 .body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  background: rgba(231, 222, 222, 0.1);
+  padding: 2vw;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -36,19 +34,18 @@ body {
 /* Botão Voltar */
 .button {
   background: #405fe9;
-  color: #fff;
+  color: #000000;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- 
 }
 
 .button:hover {
-  background: #444343;
+  background: #d14848;
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -64,7 +61,7 @@ body {
   margin: 20px 0;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #5d5e66;
+  color: #000000;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -84,6 +81,7 @@ body {
   display: block;
   margin: 20px auto;
   max-width: 100%;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   animation: float 3s ease-in-out infinite;
@@ -100,8 +98,8 @@ body {
 
 /* Container de projetos */
 .pr {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  background: rgba(8, 8, 8, 0.1);
+  padding: 2vw;
   border-radius: 15px;
   margin-top: 20px;
   animation: slideIn 1s ease-in-out;
@@ -121,47 +119,54 @@ body {
 /* Texto dentro do container de projetos */
 .text {
   font-size: 1.1rem;
-  color: #0d0b86;
+  color: #000000;
 }
 
 .text h2 {
-  color: #130d0d;
+  color: #000000;
   margin-top: 20px;
   font-size: 1.8rem;
 }
 
 .text p {
   margin: 10px 0;
-  color: #0a0404;
+  color: #000000;
 }
 
 .text ul {
   margin: 10px 0 20px 20px;
-  color: #0a0404;
+  color: #000000;
 }
 
 .text ul li {
   margin-bottom: 10px;
-  color: #0a0404;
+  color: #000000;
 }
 
 .text strong {
-  color: #0c0d48;
+  color: #000000;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* RESPONSIVIDADE */
+
+/* 📱 Para telas pequenas (celulares) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
   .hr {
-      font-size: 2rem;
+      font-size: 1.8rem;
   }
 
   .button {
       width: 100%;
-      padding: 15px;
+      padding: 12px;
+      font-size: 0.9rem;
   }
 
   .pr {
-      padding: 15px;
+      padding: 10px;
   }
 
   .text {
@@ -169,6 +174,40 @@ body {
   }
 
   .text h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+  }
+}
+
+/* 📏 Para telas médias (tablets) */
+@media (max-width: 768px) {
+  .body {
+      padding: 15px;
+  }
+
+  .hr {
+      font-size: 2rem;
+  }
+
+  .text {
+      font-size: 1rem;
+  }
+
+  .text h2 {
+      font-size: 1.6rem;
+  }
+}
+
+/* 🖥️ Para telas grandes (monitores grandes) */
+@media (min-width: 1200px) {
+  .body {
+      max-width: 1400px;
+  }
+
+  .text {
+      font-size: 1.2rem;
+  }
+
+  .text h2 {
+      font-size: 2rem;
   }
 }
