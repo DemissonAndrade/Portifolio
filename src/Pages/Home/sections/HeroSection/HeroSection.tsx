@@ -1,6 +1,6 @@
 
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.jpg";
+import Avatar from "../../../../assets/avatar.jpg";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
 
 
